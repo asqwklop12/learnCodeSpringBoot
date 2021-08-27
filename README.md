@@ -1,4 +1,12 @@
 
   - 베너 만드는 사이트
     - https://devops.datenkollektiv.de/banner.txt/index.html
-  - 
+  - 마리아 db 설치 (도커)
+    - docker pull mariadb
+    - docker run --name mariadb -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mariadb mariadb 
+      - --name mariadb : 컨테이너 명 
+      - -d 컨테이너를 백그러운드에서 실행
+      - -p 포워딩
+      - -e 환경 변수
+    - docker exec -it mariadb /bin/bash
+    - 
